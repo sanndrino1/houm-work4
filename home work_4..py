@@ -76,3 +76,47 @@ if h==8:
     print('osem')
 if k==9:
     print('devet')
+
+#...........................................................
+import cmath
+a=5
+b=10
+c=10
+d=(b**2) - (4*a*c)
+
+
+
+if a== 0:
+        print('УРАВНЕНИЕТО НЯМА РЕШЕНИЕ')
+if d <0:
+        print('уравнението няма реални корени ')
+       
+elif d==(b**2) - (4*a*c):
+    print(d)
+    #..........................................................
+
+a=5
+b=10
+c=-15
+d=(b**2) - (4*a*c)
+x =- b/(2*a)
+x1=(-b-cmath.sqrt(d))/(2*a)
+x2=(-b+cmath.sqrt(d))/(2*a)
+
+
+if a== 0:
+        print('УРАВНЕНИЕТО НЯМА kvadratno')
+if d==0:
+    print ('stop')
+elif(x==- b/(2*a)):
+    print(x)
+if d < 0:
+        print( 'noting')
+
+elif d==(b**2) - (4*a*c):
+    print(d)
+if(x1==(-b-cmath.sqrt(d))/(2*a)):
+    print(x1)
+if(x2==(-b+cmath.sqrt(d))/(2*a)):
+    print(x2)
+    print('The solution are {0} and {1}'.format(x1,x2))
