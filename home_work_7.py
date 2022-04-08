@@ -1,96 +1,54 @@
-#  Задача 3. Да се създаде речник, който да съдържа информацията за дадено меню на
-#ресторант. Ключовете му трябва да са стрингове, а стойностите цените. Програмата ще
-#поиска от потребителя да въведе следната информация:
-#Ако потребителят въведе името на дадено ястие от менюто, тогава програмата
-#да принтира цената и колко е общата цена до момента. След това да пита
-#отново дали потребителят не иска да въведе нещо друго.
-#Ако потребителят въведе име на ястие, което не е в менюто, тогава програмата
-#да изведе подходящо съобщение. След което отново програмата да пита
-#потребителя да избере нещо друго от менюто.
-#Ако потребителят въведе празен стринг, тогава програмата да спре да подканва
-#потребителя да избира от менюто и да изведе на екрана общата крайна сума.
+import numbers
+from operator import index
+from tkinter import N
+
+
+def sas():
+
+    x,y=5,10
+    print(x+y)
+    sas()
+   # Да се напише функция, която да търси в списък. Като параметър да приема
+#списък и да принтира ако елементът е в списъка неговата позиция, ако ли не да
+#принтира, че не е намерен.
+#Вход: []1, 2, 5, 9, 10, 5 Вход: [1, 2, 5, 9, 10]
+#number=[1, 2, 5, 9, 10]
+
+#def broi(nums):
+  # for i in nums:
+    #  if i==5 in nums:
+       ##   print(i)
+         # index = number.index(5)
+         # print('The index of 5:', index)
+           
+ #broi(number)
+
+#numbbers= [1, 2, 5, 9, 10]
+#def sed(saw):
+   # for num in saw:
+        #if num==3 in saw:
+           # print('yes')
+           # if num!=3 in saw:
+               # print('not')
+            #index=numbbers.index(3)
+            #print('the index of 3',index)
+#sed(numbbers)
+            
+
+#zada4a2..........................................................................
+#number=[1, 2, 5, 9, 10]  
+#def broi(nums):
+  #for i in nums:
+    #if i==3 in nums:
+       #print(i)
+       #if i in index:
+        #index = number.index(3)
+#print('The index 3 not found:', index)
+#number_sum = sum(number)  
+#print(number_sum)  
+#broi(number)
 
 
 
-import keyword
-from multiprocessing.sharedctypes import Value
-from optparse import Values
-from tkinter import Menu
-from typing import KeysView
 
-menu=[]
-lst = []
-total=0
-sum=0
-h=0
-fi=0
-
-d={'salat':5,'filet':10}
-
-while True :
-    try:
-        x=str(input('Choice menu:'))
-    except:
-  
-        if x=='':
-            break
-    if x not in d:
-       print("choise food")
-       continue
     
-      
-        
-    
-    if 'salat' in x:
-        
-        print(d['salat'],'lv')
-        
-        if 'filet' in x:
-        
-            print(d['filet'],'lv')
-        
-        
-        
-        
-        
-    
-        
-    
-    
-    
-    
-    menu.append(x)
-       
-    menu_new = sorted(menu)
-    
-    for l in menu_new:
-       
-
-        for l in range(0, len(menu_new)):
-            l += 1
-            sum = 0
-            sum = sum + l
-            sum1=5
-            sum2=10
-            sum3=total
-            h  = menu_new.count('salat')
-            fi = menu_new.count('filet')
-            total=(sum1*h+sum2*fi)
-            print(f'{h} salat //:::: //{fi} filet')
-            print("Count of food ", menu_new, "price is : ", sum)
-            
-            
-            print(total)
-            print(f'TOTAL: - {total}')
-            
-            
-            
-            
-               
-
-            
-               
-            
-                
-                
-            
