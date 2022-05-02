@@ -23,11 +23,8 @@ Number=0
 withdrawl=0
 balance = 2000
 deposit=0
-#years = 0
-n=0
 FarstName=''
 LastName=''
-
 list_A=[
 'Open You Account::'
 'Number Account:',
@@ -54,7 +51,6 @@ if option==1:
                     else:
                       Number=Number
                       print('Number is:',Number)
- 
   print('Member Account Number  ''{} :!!!'.format(Number))
   FarstName=input('Farst Name:!!')
   if  len(FarstName)>20:
